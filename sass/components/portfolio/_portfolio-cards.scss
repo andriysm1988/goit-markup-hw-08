@@ -82,7 +82,7 @@
   border: 1px solid var(--card-border-line);
 }
 
-.project__title {
+.card-content__title {
   margin-bottom: 4px;
 
   color: var(--title-text-color);
@@ -91,7 +91,7 @@
   letter-spacing: 0.06em;
 }
 
-.project__text {
+.card-content__text {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
