@@ -1,0 +1,82 @@
+.subscribe-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.subscribe-area {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.button__icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.subscribe-mail {
+  width: 450px;
+  height: 50px;
+  border: 1px solid var(--subscribe-mail-border-color);
+  border-radius: 4px;
+  padding: 0px 0px 0px 16px;
+
+  background-color: transparent;
+  margin-bottom: 20px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+}
+
+.subscribe-wrapper input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: var(--subscribe-mail-placeholder-color);
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 0;
+
+  background-color: var(--accent-color);
+
+  cursor: pointer;
+}
+
+.button__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-bg-color);
+}

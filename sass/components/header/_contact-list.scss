@@ -1,0 +1,132 @@
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.contact-list__link {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+}
+
+.contact-list__link--size {
+  font-size: 34px;
+  line-height: 1.18;
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+    color: var(--primary-text-color);
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+}
+
+.contact-list__item:nth-of-type(1) {
+  order: 2;
+
+  @media screen and (min-width: 768px) {
+    order: 1;
+  }
+}
+
+.contact-list__item:nth-of-type(2) {
+  margin-bottom: 32px;
+  order: 1;
+
+  @media screen and (min-width: 768px) {
+    order: 2;
+    margin-bottom: 0px;
+  }
+}
+
+.social-web-list {
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.social-web-list__item {
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.social-web-list__item:nth-child(-n + 3) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
+  padding-right: 10px;
+}
+
+.social-web-list__link {
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.contact-list__icon {
+  display: none;
+  @media screen and (min-width: 768px) {
+    fill: currentColor;
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    display: block;
+
+    &--size {
+      width: 10px;
+      height: 14px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+
+    &--size {
+      width: 10px;
+      height: 16px;
+    }
+  }
+}

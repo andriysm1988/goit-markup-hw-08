@@ -1,0 +1,41 @@
+.section--hidden {
+  display: none;
+  padding-top: 0px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+.work-examples {
+  display: flex;
+  line-height: 0;
+}
+
+.work-examples__item {
+  position: relative;
+  display: block;
+
+  &:nth-child(-n + 2) {
+    margin-right: 30px;
+  }
+}
+
+.work-examples__image {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  padding: 27px 82px;
+
+  background-color: var(--overlay-color-for-work-examples);
+}
+
+.work-examples__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-bg-color);
+}
