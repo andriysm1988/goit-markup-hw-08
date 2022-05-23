@@ -23,13 +23,12 @@
 .address-web-list-wrapper {
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: baseline;
     justify-content: space-around;
+    align-items: baseline;
   }
 
   @media screen and (min-width: 1200px) {
     justify-content: center;
-    align-items: baseline;
   }
 }
 

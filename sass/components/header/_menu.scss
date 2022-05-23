@@ -6,7 +6,6 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 2;
 
   &:focus-within .button-menu__burger,
   &:focus-within .button-menu__cross {
@@ -40,24 +39,25 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+
+    width: 100%;
     height: 100vh;
-    z-index: 1;
+    padding: 48px 83px 48px 40px;
+
     display: none;
-    background-color: var(--primary-bg-color);
+    background-color: brown;
 
     &.is-open {
       display: block;
     }
   }
-
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
 
   .menu {
-    margin: 48px 221px 302px 40px;
+    margin-bottom: 302px;
 
     @media screen and (min-width: 768px) {
       margin: 0px 84px 0px 88px;
