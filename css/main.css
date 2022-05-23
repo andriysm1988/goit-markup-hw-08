@@ -1478,7 +1478,7 @@ textarea::placeholder {
   border-color: var(--accent-color);
 }
 
-.agreements__icon {
+.label-box__icon {
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   margin-right: 8px;
@@ -1486,7 +1486,7 @@ textarea::placeholder {
   height: 15px;
 }
 
-.agreements__text {
+.label-box_text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -1494,13 +1494,13 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 1200px) {
-  .agreements__text {
+  .label-box_text {
     font-size: 14px;
     line-height: 1.71;
   }
 }
 
-.agreements__element {
+.label-box__element {
   text-decoration: underline;
   color: var(--accent-color);
 }
