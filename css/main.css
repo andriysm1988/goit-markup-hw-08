@@ -1473,7 +1473,7 @@ textarea::placeholder {
   overflow: hidden;
 }
 
-.agreements:checked + .agreements__icon {
+.agreements:checked + .label-box__icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }

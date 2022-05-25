@@ -175,7 +175,7 @@ textarea::placeholder {
   clip: rect(0 0 0 0);
   overflow: hidden;
 
-  &:checked + .agreements__icon {
+  &:checked + .label-box__icon {
     background-color: var(--accent-color);
     border-color: var(--accent-color);
   }
